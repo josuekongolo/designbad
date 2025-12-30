@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt Designbad AS for gratis befaring. Premium baderomsrenovering i Oslo, Bærum, Asker, Nesodden og Lørenskog. Tlf: 900 00 000">
+    <meta name="keywords" content="kontakt designbad, befaring bad oslo, baderomsrenovering tilbud, flislegger oslo kontakt">
+    <meta name="author" content="Designbad AS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kontakt oss | Designbad AS">
+    <meta property="og:description" content="La oss snakke om ditt drømmebad. Gratis og uforpliktende befaring i Oslo og omegn.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://designbad.no/kontakt">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛁</text></svg>">
+
+    <title>Kontakt oss | Designbad AS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">DESIGNBAD</a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Hjem</a></li>
+                        <li><a href="tjenester.html" class="nav__link">Tjenester</a></li>
+                        <li><a href="prosjekter.html" class="nav__link">Prosjekter</a></li>
+                        <li><a href="om-oss.html" class="nav__link">Om oss</a></li>
+                        <li><a href="kontakt.html" class="nav__link nav__link--active">Kontakt</a></li>
+                    </ul>
+                    <a href="kontakt.html" class="btn btn--primary nav__cta">Book befaring</a>
+                </nav>
+
+                <button class="menu-toggle" aria-label="Meny">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Hjem</a></li>
+            <li class="mobile-menu__item"><a href="tjenester.html" class="mobile-menu__link">Tjenester</a></li>
+            <li class="mobile-menu__item"><a href="prosjekter.html" class="mobile-menu__link">Prosjekter</a></li>
+            <li class="mobile-menu__item"><a href="om-oss.html" class="mobile-menu__link">Om oss</a></li>
+            <li class="mobile-menu__item"><a href="kontakt.html" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+        <a href="kontakt.html" class="btn btn--primary mobile-menu__cta">Book befaring</a>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero__title fade-in">Kontakt oss</h1>
+            <p class="page-hero__subtitle fade-in">La oss snakke om ditt drømmebad</p>
+            <div class="gold-line fade-in"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="fade-in-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="contact-form__inner">
+                            <div class="form-group">
+                                <label for="name">Navn *</label>
+                                <input type="text" id="name" name="name" required placeholder="Ditt fulle navn">
+                                <span class="error-message">Vennligst fyll inn ditt navn</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">E-post *</label>
+                                <input type="email" id="email" name="email" required placeholder="din@epost.no">
+                                <span class="error-message">Vennligst oppgi en gyldig e-postadresse</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="900 00 000">
+                                <span class="error-message">Vennligst oppgi et gyldig telefonnummer</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectType">Prosjekttype *</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Velg prosjekttype</option>
+                                    <option value="totalrenovering">Totalrenovering</option>
+                                    <option value="flisarbeid">Flisarbeid</option>
+                                    <option value="mikrosement">Mikrosement</option>
+                                    <option value="designkonsultasjon">Designkonsultasjon</option>
+                                    <option value="annet">Annet</option>
+                                </select>
+                                <span class="error-message">Vennligst velg en prosjekttype</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Kort beskrivelse av prosjektet *</label>
+                                <textarea id="message" name="message" required placeholder="Fortell oss litt om ditt prosjekt, ønsker og eventuelle tidsrammer..."></textarea>
+                                <span class="error-message">Vennligst beskriv ditt prosjekt</span>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary form-submit">Send forespørsel</button>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div class="form-success">
+                            <div class="form-success__icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="form-success__title">Takk for din henvendelse!</h3>
+                            <p class="form-success__text">Vi tar kontakt innen 24 timer for å avtale befaring.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info fade-in-right">
+                    <h2 class="contact-info__title">Kom i kontakt</h2>
+
+                    <div class="contact-info__items">
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <h4>Adresse</h4>
+                                <p>Munkedamsveien 55A<br>0270 Oslo</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <h4>Telefon</h4>
+                                <a href="tel:+4790000000">900 00 000</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <h4>E-post</h4>
+                                <a href="mailto:post@designbad.no">post@designbad.no</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div class="contact-info__text">
+                                <h4>Åpningstider</h4>
+                                <p>Mandag – Fredag: 08:00 – 17:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__note">
+                        <p><strong>Befaring er alltid gratis og uforpliktende.</strong> Vi kommer hjem til deg for å diskutere muligheter og gi deg et detaljert tilbud.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="contact-map fade-in">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0!2d10.7278!3d59.9139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU0JzUwLjAiTiAxMMKwNDMnNDAuMSJF!5e0!3m2!1sen!2sno!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Designbad AS lokasjon">
+                    </iframe>
+                </div>
+                <div class="contact-map__note">
+                    <p>Vi dekker Oslo og nærområdene: <strong>Bærum, Asker, Nesodden og Lørenskog</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="logo">DESIGNBAD</a>
+                    <p class="footer__tagline">Baderom med signatur</p>
+                </div>
+
+                <div class="footer__nav">
+                    <h4 class="footer__title">Sider</h4>
+                    <ul class="footer__links">
+                        <li><a href="tjenester.html">Tjenester</a></li>
+                        <li><a href="prosjekter.html">Prosjekter</a></li>
+                        <li><a href="om-oss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h4 class="footer__title">Kontakt</h4>
+                    <p>Munkedamsveien 55A</p>
+                    <p>0270 Oslo</p>
+                    <p>900 00 000</p>
+                    <p>post@designbad.no</p>
+                </div>
+
+                <div class="footer__hours">
+                    <h4 class="footer__title">Åpningstider</h4>
+                    <p>Mandag – Fredag</p>
+                    <p>08:00 – 17:00</p>
+
+                    <div class="footer__social">
+                        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1"/>
+                            </svg>
+                        </a>
+                        <a href="https://pinterest.com" aria-label="Pinterest" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6 C8 6 6 9 6 12 C6 14 7 16 9 16 C9.5 16 10 15.5 10 15 L10.5 13 C10 12.5 9.5 12 9.5 11 C9.5 9 11 7.5 12.5 7.5 C14 7.5 15 8.5 15 10 C15 11.5 14 14 12.5 14 C11.5 14 11 13 11.5 12 L12 10"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Org.nr: 936717012</p>
+                <p>&copy; 2025 Designbad AS. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
