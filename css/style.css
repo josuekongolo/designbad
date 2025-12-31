@@ -274,6 +274,15 @@ section {
     letter-spacing: 0.15em;
     color: var(--color-charcoal);
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .logo::after {
@@ -665,6 +674,12 @@ section {
     stroke: var(--color-gold);
     stroke-width: 1;
     fill: none;
+}
+
+.service-card__icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
 .service-card__title {
@@ -1634,6 +1649,17 @@ section {
 .footer__bottom p {
     font-size: 0.8125rem;
     color: var(--color-taupe);
+}
+
+.footer__attribution {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: var(--space-sm);
+}
+
+.footer__attribution a {
+    text-decoration: underline;
 }
 
 /* ============================================
